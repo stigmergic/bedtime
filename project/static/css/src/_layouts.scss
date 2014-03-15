@@ -1,0 +1,66 @@
+//
+// Layouts
+// ---------------------------
+
+
+.content {
+  width: 600px;
+  margin: 0px auto;
+  background: #00EEFF;
+  padding: 20px;
+}
+
+.content h1 {
+  clear: right;
+  font-size: 32px;
+  font-style: bold;
+  font-weight: bold;
+  color: #7700AA;
+  text-align: center;
+  width: 100%;
+  margin: 10px;  
+}
+
+.task {
+  clear: right;
+  font-size: 28px;
+  font-style: bold;
+  color: #7700AA;
+}
+
+.total {
+  font-size: 28px;
+  font-style: bold;
+  color: #7700AA;
+  
+}
+
+.time {
+  font-size: 28px;
+  font-style: bold;
+  color: #7700AA;
+  display: inline;
+  float: right;
+}
+
+div.task-label {
+  display: inline-block;
+  width: 200px;
+}
+
+.finished {
+  display: inline;
+}
+
+
+.time-wrapper {
+  display: inline-block;
+}
+
+.current .time-wrapper {
+  width: 40%;
+}
+
+.task .time-wrapper {
+  width: 20%;
+}

@@ -1,0 +1,71 @@
+//
+// Buttons
+// ---------------------------
+
+// Base styles
+// --------------------------------------------------
+
+button {
+  -moz-box-shadow:inset 0px 1px 0px 0px #aaa;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #aaa;
+  box-shadow:inset 0px 1px 0px 0px #aaa;
+  background-color: #FFDDDD;
+  -webkit-border-top-left-radius:10px;
+  -moz-border-radius-topleft:10px;
+  border-top-left-radius:10px;
+  -webkit-border-top-right-radius:10px;
+  -moz-border-radius-topright:10px;
+  border-top-right-radius:10px;
+  -webkit-border-bottom-right-radius:10px;
+  -moz-border-radius-bottomright:10px;
+  border-bottom-right-radius:10px;
+  -webkit-border-bottom-left-radius:10px;
+  -moz-border-radius-bottomleft:10px;
+  border-bottom-left-radius:10px;
+  text-indent:0;
+  border:1px solid #555;
+  display:inline-block;
+  color:#7700AA;
+  font-family:Arial;
+  font-size:25px;
+  font-weight:bold;
+  font-style:bold;
+  height:30px;
+  line-height:20px;
+  width:100px;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:1px 1px 0px #aaa;
+  
+  margin: 10px;
+}
+
+.task a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+// Core
+.btn {
+    display: inline-block;
+    @include ie7-inline-block();
+
+    // Hover state
+    &:hover {
+    }
+
+    // Focus state for keyboard and accessibility
+    &:focus {
+        //@include tab-focus();
+    }
+
+    // Active state
+    &.active,
+    &:active {
+    }
+
+    // Disabled state
+    &.disabled,
+    &[disabled] {
+    }
+}

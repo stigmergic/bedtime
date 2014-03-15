@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Bedtime App{% endblock %}
+
+{% block content %}
+<h1>
+    Bedtime App 
+    <div class="current">Current TIME: <div class='time-wrapper'><div class="time"></div></div></div>
+    </h1>
+
+<div>
+    <div class="task pajamas"><div class="task-label">Pajamas</div>    <a href="#"><button>Start</button></a><div class='time-wrapper'><div class='time-wrapper'><div class="time"></div></div></div><div class="finished"><label><input type="checkbox" name="checkbox" value="value"></label></div></div>
+    <div class="task toothbrush"><div class="task-label">Toothbrush</div> <a href="#"><button>Start</button></a><div class='time-wrapper'><div class="time"></div></div><div class="finished"><label><input type="checkbox" name="checkbox" value="value"></label></div></div>
+    <div class="task facewashing"><div class="task-label">Facewashing</div>      <a href="#"><button>Start</button></a><div class='time-wrapper'><div class="time"></div></div><div class="finished"><label><input type="checkbox" name="checkbox" value="value"></label></div></div>
+    <div class="task potty"><div class="task-label">Potty</div>   <a href="#"><button>Start</button></a><div class='time-wrapper'><div class="time"></div></div><div class="finished"><label><input type="checkbox" name="checkbox" value="value"></label></div></div>
+    <div class="task"></div>
+</div>
+<div class="total">Total Time: <div class='time-wrapper'><div class="time"></div></div></div>
+<div class="total">Time to beat: <div class='time-wrapper'><div class="time"></div></div></div>
+<div class="total">Yesterday: <div class='time-wrapper'><div class="time"></div></div></div>
+<p>
+	<a href="/admin/">Admin</a> is here.
+</p>
+{% endblock %}
