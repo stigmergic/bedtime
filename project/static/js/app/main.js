@@ -30,5 +30,19 @@ define(function( require ){
             }, 2000);
         });
     });
-    
+
+    var times = $('.total .time').each(function (index) {
+        var clock = $(this).FlipClock(0, {
+            clockFace: 'MinuteCounter',
+            countdown: false 
+        });
+        setTimeout(function() {
+            setInterval(function() {
+                //clock.getTime().time=605;
+                //console.log(clock.getTime());
+            }, 2000);
+        });
+        console.log('a', $(this).closest('.task').find('button')[0]);
+
+    });
 });
